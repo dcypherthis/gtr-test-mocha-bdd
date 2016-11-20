@@ -3,7 +3,7 @@ const merge = require('deepmerge');
 const masterConf = require('../master.conf.js');
 const devConf = {
     specs: [
-        './devFeatures/**/*.feature',
+        './specs/**/*.js',
     ],
     capabilities: [
         // {

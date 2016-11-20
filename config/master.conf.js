@@ -13,24 +13,12 @@ exports.config = {
     waitforTimeout: 30000,
     connectionRetryTimeout: 30000,
     connectionRetryCount: 3,
-    framework: 'cucumber',
-    env: _config,
-    cucumberOpts: {
-        backtrace: true,   // <boolean> show full backtrace for errors
-        compiler: [],       // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
-        dryRun: false,      // <boolean> invoke formatters without executing steps
-        failFast: false,    // <boolean> abort the run on first failure
-        format: ['pretty'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
-        colors: true,       // <boolean> disable colors in formatter output
-        snippets: false,     // <boolean> hide step definition snippets for pending steps
-        source: false,       // <boolean> hide source uris
-        profile: [],        // <string[]> (name) specify the profile to use
-        strict: false,      // <boolean> fail if there are any undefined or pending steps
-        tags: [], // ['@only', '@isolate'], // <string[]> (expression) only execute the features or scenarios with tags matching the expression
-        timeout: 60000,     // <number> timeout for step definitions
-        ignoreUndefinedDefinitions: true, // <boolean> Enable this config to treat undefined definitions as warnings.
-        require: ['./stepDefinitions/'], // relative path to the step files
+    framework: 'mocha',
+    mochaOpts: {
+        ui: 'bdd',
+        timeout: 60000
     },
+    env: _config,
     before: function () { //eslint-disable-line object-shorthand
         var chai = require('chai'); //eslint-disable-line no-var
         global.expect = chai.expect;
