@@ -1,0 +1,8 @@
+{
+    "home_url": "https://guitar-practice-app.herokuapp.com/",
+    "login_url": "https://guitar-practice-app.herokuapp.com/login",
+    "profile_url": "https://guitar-practice-app.herokuapp.com/profile",
+    "setLists_url": "https://guitar-practice-app.herokuapp.com/set-lists",
+    "signup_url": "https://guitar-practice-app.herokuapp.com/signup",
+    "songs_url": "https://guitar-practice-app.herokuapp.com/songs"
+}
