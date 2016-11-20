@@ -3,7 +3,7 @@ const merge = require('deepmerge');
 const masterConf = require('../master.conf.js');
 const devConf = {
     specs: [
-        './specs/**/*.js',
+        './specs/addSong.js',
     ],
     capabilities: [
         // {
@@ -20,8 +20,5 @@ const devConf = {
     ],
     logLevel: 'result',
     reporters: ['dot', 'spec'],
-    // cucumberOpts: {
-    //     require: ['./stepDefinitions/'],
-    // },
 };
 exports.config = merge(masterConf.config, devConf);
