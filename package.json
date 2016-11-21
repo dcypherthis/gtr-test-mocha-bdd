@@ -30,7 +30,7 @@
     "test-local-dev": "wdio config/local/dev.conf.js",
     "test-remote": "wdio config/sauceLabs/suite.sauce.conf.js",
     "test-remote-dev": "wdio config/sauceLabs/dev.sauce.conf.js"
-  }
+  },
   "dependencies": {
     "babel-preset-es2015": "6.14.0",
     "babel-register": "^6.14.0",
@@ -38,7 +38,7 @@
     "config": "^1.21.0",
     "cucumber": "~1.2.0",
     "deepmerge": "^0.2.10",
-    "gtr-test-xray": "^0.1.4",
+    "gtr-test-xray": "^1.0.0",
     "node-uuid": "^1.4.7",
     "request": "^2.74.0",
     "wdio-dot-reporter": "0.0.6",
